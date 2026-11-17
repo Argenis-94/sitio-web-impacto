@@ -1,0 +1,242 @@
+/* Hoja de estilos - Impacto de las Tecnologías Web */
+
+:root {
+  --azul-oscuro: #0b2a5b;
+  --azul: #1f5fbf;
+  --celeste: #e8f0fb;
+  --texto: #1d2433;
+  --gris: #5b6577;
+  --borde: #d3dbe8;
+  --acento: #f2a900;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Arial, sans-serif;
+  color: var(--texto);
+  background: #f7f9fc;
+  line-height: 1.6;
+}
+
+/* Encabezado y navegación */
+header {
+  background: var(--azul-oscuro);
+  color: #fff;
+  padding: 1.5rem 1rem 0;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0 0 0.25rem;
+  font-size: 1.9rem;
+}
+
+header p {
+  margin: 0 0 1rem;
+  color: #c9d8f2;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.25rem;
+}
+
+nav a {
+  display: block;
+  padding: 0.75rem 1.1rem;
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 4px solid transparent;
+}
+
+nav a:hover,
+nav a.activo {
+  background: var(--azul);
+  border-bottom-color: var(--acento);
+}
+
+/* Estructura principal */
+.contenedor {
+  max-width: 1100px;
+  margin: 1.5rem auto;
+  padding: 0 1rem;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 1.5rem;
+}
+
+main {
+  min-width: 0;
+}
+
+section,
+article {
+  background: #fff;
+  border: 1px solid var(--borde);
+  border-radius: 8px;
+  padding: 1.25rem 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+article {
+  background: var(--celeste);
+}
+
+h2 {
+  color: var(--azul-oscuro);
+  margin-top: 0;
+  border-left: 5px solid var(--acento);
+  padding-left: 0.6rem;
+}
+
+h3 {
+  color: var(--azul);
+}
+
+h4,
+h5,
+h6 {
+  color: var(--gris);
+  margin-bottom: 0.3rem;
+}
+
+aside {
+  background: #fff;
+  border: 1px solid var(--borde);
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  align-self: start;
+}
+
+aside h2 {
+  font-size: 1.1rem;
+}
+
+/* Imágenes y video */
+figure {
+  margin: 1rem 0;
+}
+
+figure img,
+video {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 1px solid var(--borde);
+  display: block;
+}
+
+figcaption {
+  font-size: 0.85rem;
+  color: var(--gris);
+  margin-top: 0.4rem;
+}
+
+/* Tablas */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1rem 0;
+  font-size: 0.95rem;
+}
+
+caption {
+  font-weight: bold;
+  text-align: left;
+  padding-bottom: 0.5rem;
+  color: var(--azul-oscuro);
+}
+
+th,
+td {
+  border: 1px solid var(--borde);
+  padding: 0.55rem 0.7rem;
+  text-align: left;
+  vertical-align: top;
+}
+
+thead th {
+  background: var(--azul-oscuro);
+  color: #fff;
+}
+
+tbody tr:nth-child(even) {
+  background: #f1f5fb;
+}
+
+/* Formulario */
+form {
+  display: grid;
+  gap: 0.9rem;
+  max-width: 600px;
+}
+
+label {
+  font-weight: 600;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid var(--borde);
+  border-radius: 6px;
+  font: inherit;
+}
+
+input:focus,
+textarea:focus {
+  outline: 2px solid var(--azul);
+}
+
+button {
+  background: var(--azul);
+  color: #fff;
+  border: 0;
+  border-radius: 6px;
+  padding: 0.7rem 1.4rem;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  justify-self: start;
+}
+
+button:hover {
+  background: var(--azul-oscuro);
+}
+
+/* Pie de página */
+footer {
+  background: var(--azul-oscuro);
+  color: #c9d8f2;
+  text-align: center;
+  padding: 1.2rem 1rem;
+  margin-top: 2rem;
+  font-size: 0.9rem;
+}
+
+footer a {
+  color: #fff;
+}
+
+/* Pantallas pequeñas */
+@media (max-width: 800px) {
+  .contenedor {
+    grid-template-columns: 1fr;
+  }
+
+  header h1 {
+    font-size: 1.4rem;
+  }
+}

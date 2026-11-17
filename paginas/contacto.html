@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulario de contacto del sitio sobre el impacto de las tecnologías web.">
+    <title>Contacto | Impacto de las Tecnologías Web</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>Contacto</h1>
+        <p>Envíanos tus comentarios o dudas</p>
+        <nav aria-label="Menú principal">
+            <ul>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="sociedad.html">Sociedad</a></li>
+                <li><a href="negocios.html">Negocios</a></li>
+                <li><a href="tecnologias.html">Tecnologías</a></li>
+                <li><a href="contacto.html" class="activo">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="contenedor">
+        <main>
+            <section>
+                <h2>Formulario de contacto</h2>
+                <p>Todos los campos son obligatorios.</p>
+
+                <form action="#" method="post">
+                    <div>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+                    </div>
+
+                    <div>
+                        <label for="correo">Correo electrónico</label>
+                        <input type="email" id="correo" name="correo" placeholder="correo@ejemplo.com" required>
+                    </div>
+
+                    <div>
+                        <label for="asunto">Asunto</label>
+                        <input type="text" id="asunto" name="asunto" placeholder="Motivo de tu mensaje" required>
+                    </div>
+
+                    <div>
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" rows="6" placeholder="Escribe aquí tu mensaje"
+                            required></textarea>
+                    </div>
+
+                    <button type="submit">Enviar mensaje</button>
+                </form>
+            </section>
+
+            <article>
+                <h3>¿Para qué sirve este formulario?</h3>
+                <p>
+                    Permite que los visitantes envíen comentarios sobre el contenido del sitio.
+                    Es un ejemplo de los elementos de formulario de HTML5.
+                </p>
+            </article>
+        </main>
+
+        <aside>
+            <h2>Información</h2>
+            <p>Proyecto académico desarrollado para la asignatura de tecnologías web.</p>
+            <h2>Autor</h2>
+            <p>Paul Argenis Uruchima Lara<br>Alausí, Ecuador</p>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Paul Argenis Uruchima Lara. Proyecto académico - UTPL.</p>
+    </footer>
+
+</body>
+
+</html>
